@@ -1,0 +1,5 @@
+JavaScript ek interpreted language hai, matlab JavaScript code ko execute karne ke liye interpreter ka istemal hota hai. Jab aap ek web page ko browser mein open karte hain, browser JavaScript code ko line-by-line interpret karta hai aur use immediate execution ke zariye execute karta hai.
+
+Iska matlab hai ki JavaScript code ko kisi separate compilation step ki zaroorat nahi hoti hai. Browser code ko interpret karta hai aur turant execute karta hai, jisse developers ko code changes ka immediate feedback milta hai. JavaScript ke liye execution environment, jaise ki web browsers (e.g., Chrome, Firefox, Safari) ya server-side environment (e.g., Node.js), JavaScript code ko interpret karte hain.
+
+Is tarah se, JavaScript ka working interpreter-based approach par hota hai, na ke compiler-based.

@@ -1,0 +1,44 @@
+Programming ek tarika hai jisse hum computer ko instructions dena seekhte hain. Ye instructions humare likhe gaye special codes hote hain jo computer ko samajhne me madad karte hain. Programming ke zariye hum computer programs, applications, websites, games, aur aur bhi bahut kuch develop kar sakte hain. Ye ek creative aur powerful tool hai jo technology ko shape dene me madad karta hai. Programming me alag-alag programming languages ka istemal hota hai jaise ki Python, Java, C++, JavaScript, etc.
+
+Lekin Computer to Programming Samajhta nhi he
+
+Haan, aap bilkul sahi hain. Computer keval binary language (0s aur 1s) ko samajh sakta hai, jo ki machine language ke roop mein jaana jaata hai. Lekin hum insani zubaan mein likhe gaye code ko compile ya interpret karke machine language mein badal dete hain, taaki computer usse samajh sake.
+
+Programming languages ko hum insani zubaan mein likhte hain taaki hum computer ko instructions de sakein. Ye languages humare liye zyada samajhne mein asaan hote hain. Jab hum code likhte hain, hum instructions ko syntax ke roop mein likhte hain jo computer ke rules aur structure ko follow karte hain.
+
+Is tarah se, programming ek tarika hai jisse hum computer ko samajhane ke liye insani zubaan mein instructions dete hain. Computer phir un instructions ko machine language mein badal kar samajhta hai aur unhe execute karta hai.
+
+Ab Jo Translate krta he wo 2 tareeqe hote he compile krne ke.
+
+Compiler aur interpreter dono hi programming languages ke code ko machine language mein translate karne ke liye istemal hota hai, lekin dono kaam karne ka tarika alag hai.
+
+1. compiler
+
+Compiler ek aise program hai jo poora source code ko ek baar mein translate karta hai. Source code compile hota hai aur uska machine language version, ya object code, generate hota hai. Is object code ko execute kiya ja sakta hai baar-baar bina source code ke. Compiler ek complete executable file generate karta hai, jo alag se execute kiya ja sakta hai.
+
+2. interpret
+
+Interpreter bhi source code ko machine language mein translate karta hai, lekin wo ise line-by-line execute karta hai. Interpreter source code ko ek line ko parhta hai, usse translate karta hai aur phir use execute karta hai. Phir agle line ko padhta hai aur usi tarah se continue karta hai. Interpreter source code ko execute karte waqt hota hai, isliye har baar code ko run karne ke liye interpreter ki zarurat hoti hai.
+
+Toh, ek compiler poora source code ko ek baar mein translate karta hai aur ek executable file generate karta hai, jabki ek interpreter source code ko line-by-line translate aur execute karta hai.
+
+--------------------------------------------------------------------
+
+High Level Programming language VS Low Level Programming language
+
+High Level Programming language
+
+High level languages insani zubaan jaise English ki tarah hoti hain, jinhe aasani se samjha aur likha ja sakta hai.
+Ye languages abstractions aur built-in functions ka istemal karte hain jo programming tasks ko asaan banate hain.
+Developers ko hardware ki details ya internal workings ki fiqr nahi karni parti hai.
+Examples: Python, Java, JavaScript, C#, etc.
+
+Low Level Programming language
+
+Low level languages hardware aur computer architecture ke niji tareeqo se zyada qareeb hoti hain.
+In languages mein programming instructions aur data ko seedha hardware level par manipulate karne ki suvidha hoti hai.
+Ye languages zyada samajhne mein mushkil hote hain aur development process ko complex bana dete hain.
+Examples: Assembly language, Machine language.
+
+JavaScript ek high level programming language hai. Iska matlab hai ki ye language insani zubaan jaise hai aur developers ise aasani se samajh aur likh sakte hain. JavaScript ko web development ke liye khas tor par istemal kiya jata hai, jaise ki web applications, interactive websites, aur browser extensions banane ke liye. JavaScript ka use client-side scripting aur server-side scripting mein bhi hota hai. Ye language modern web development ka ek important component hai.
+
