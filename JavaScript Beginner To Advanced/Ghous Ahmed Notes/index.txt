@@ -42,3 +42,32 @@ Examples: Assembly language, Machine language.
 
 JavaScript ek high level programming language hai. Iska matlab hai ki ye language insani zubaan jaise hai aur developers ise aasani se samajh aur likh sakte hain. JavaScript ko web development ke liye khas tor par istemal kiya jata hai, jaise ki web applications, interactive websites, aur browser extensions banane ke liye. JavaScript ka use client-side scripting aur server-side scripting mein bhi hota hai. Ye language modern web development ka ek important component hai.
 
+--------------------------------------------------------------------
+
+EcmaScript (ECMAScript) ek standard hai jo JavaScript programming language ke liye define ki gayi hai. Jab se JavaScript banaya gaya, tab se isme regular updates aur improvements hote rahe hain. In updates aur improvements ko standardize karne ke liye, Ecma International ne EkmaScript ko define kiya.
+
+ECMAScript, JavaScript ki ek specific implementation ka standard hai. Ye standard specify karta hai ki JavaScript language mein kya features aur capabilities hone chahiye. Isse developers ko ek consistent platform milta hai jisme wo code likh sakte hain.
+
+Har new version ya update ke saath, ECMAScript specification mein naye features aur improvements shamil kiye jate hain jo developers ke liye behtar functionality aur flexibility provide karte hain. Bahut se modern web browsers, jaise ki Google Chrome, Mozilla Firefox, aur Safari, ECMAScript ke latest versions ko support karte hain, jisse developers ko naye features ka istemal karne ki rasta milta hai.
+
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+1st Chapter - Alert
+
+JavaScript mein, `alert()` ek built-in function hai jo ek pop-up dialog box ko display karta hai jo user ko kuch message dikhata hai. Ye message typically ek string hota hai jo developer ne specify kiya hota hai. `alert()` function ka basic istemal user ko kisi information ya notification ke bare mein suchit karne ke liye hota hai.
+
+Yeh ek simple tareeqa hai user ko kuch information provide karne ka. Jaise:
+
+```javascript
+alert("Welcome to our website!");
+```
+
+Is code se, agar koi user website ko visit karta hai to usse ek pop-up message milega jisme "Welcome to our website!" likha hoga. Uske baad jab user pop-up box ko close karega, wo website par navigate kar sakta hai.
+
+ye javascript ka banaya gaya eik method he jise ham use krskte he.
+Ab method ka matlab eil Example se samajhata hoo.
+Ap ke Mom ne kaha ke motor chala ke ajaooo. lekin motor chalane ke liye motor set krni padti he phir uske taar ko board ke sath jora jataa he. phir jaake start krni padti he agar ham taar ko board ke sath jor dete he to ab hamara kaam chota saa reh gaya bas hame button toggled krna he motor ko chalane ya band krne ke liye. ab hamne toggled wala seen kiya ne ye eik method ban gaya or ham us ko use krte rehte he.
