@@ -74,6 +74,181 @@ Ap ke Mom ne kaha ke motor chala ke ajaooo. lekin motor chalane ke liye motor se
 
 Rules Of method.
 - method ke sath hamesha round bracket lagta he () agar iske saath round bracket () nhi lage to ham usko method nhi keh skte 
-- 
-- 
-- 
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+Rule Of JavaScript
+- Agar Ham ne Code Likha Or Code ka Output Show nhi horaha. to hame browser me inspect me jake console me check krenge
+- saare errors browser me inspect me jake console me nazar ate he
+- Agar Ham ne Boolean, Number, Null, undefined ya koi bhi datatype ko string me likh de to koi bhi error nhi ayega blki wo jo aapne likh tha uska datatype string banega. lekin agar ham string ko string ke ilawa koi or datatype me likh de to error asakta he.
+- development ke doraan console khol ke rakhe to behter he.
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+JavaScript aur dusri programming languages ke darmiyan kuch mukhya farq hote hain:
+
+1. Client-side aur Server-side Execution:
+   - JavaScript ek client-side scripting language hai, matlab ye web browsers mein execute hota hai.
+   - Dusri taraf, server-side languages jaise PHP, Python, aur Ruby server par execute hote hain.
+
+2. Type of Language:
+   - JavaScript ek interpreted language hai, matlab iska code line-by-line execute hota hai.
+   - Kuch dusri languages jaise Java, C++, aur C# compiled languages hain, jinke code ko pehle compile kiya jata hai aur phir execute kiya jata hai.
+
+3. Syntax aur Structure:
+   - JavaScript ka syntax aur structure alag hota hai dusri languages jaise C++, Java, Python, etc.
+   - Isme specific syntax rules aur conventions hote hain jo dusri languages se alag hote hain.
+
+4. Concurrency Handling:
+   - JavaScript single-threaded language hai, matlab ek samay par sirf ek hi task execute hota hai.
+   - Kuch languages concurrent programming aur multithreading ko support karte hain, jisse ek samay par multiple tasks ko handle kiya ja sakta hai.
+
+5. Standard Libraries aur Frameworks:
+   - JavaScript ke liye alag-alag standard libraries aur frameworks hote hain jaise ki React, Angular, aur Node.js.
+   - Dusri languages ke liye bhi apne standard libraries aur frameworks hote hain jo unke specific use cases ko address karte hain.
+
+6. Execution Environment:
+   - JavaScript web browsers aur server environments jaise Node.js ke through execute hota hai.
+   - Dusri languages apne specific runtime environments mein execute hote hain, jaise ki Java Virtual Machine (JVM) Java ke liye.
+
+Ye kuch mukhya farq hain JavaScript aur dusri programming languages ke darmiyan. Har language ke apne use cases aur strengths hote hain, jisse developers apne project requirements ke according choose karte hain.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+Console kya hota he aur as a developer ham kyu istemal krte he?
+
+"Console" ek development environment ka hissa hota hai jo developers ko code likhte waqt debugging aur testing ke liye madad karta hai. Iska basic purpose hota hai developers ko real-time feedback provide karna unke code ke execution ke doraan.
+
+Web development context mein, "console" usually web browser ke developer tools ka ek part hota hai. Developers isme JavaScript code likh sakte hain aur fir use execute karke errors ko identify aur debug kar sakte hain. Ye console aam tor par ek command line interface ki tarah kaam karta hai jahaan se developers apne JavaScript code ko run kar sakte hain.
+
+Developers console ka istemal karte hain kyun ki:
+
+1. Debugging: Developers console ko use karte hain errors aur bugs ko identify karne aur fix karne ke liye. Ye unhe real-time feedback deta hai unke code ke execution ke doraan.
+
+2. Testing: Console ko use karke developers apne code ko test kar sakte hain. Wo apne functions aur variables ko test kar sakte hain aur unke output ko dekh sakte hain.
+
+3. Logging Information: Developers apne code ke different parts ko console par log karte hain taki wo code ka flow track kar sakein aur kisi issue ko diagnose kar sakein.
+
+4. Performance Analysis: Console ki madad se developers apne code ki performance analyze kar sakte hain, jaise ki execution time aur memory usage.
+
+5. API Exploration: Console ki madad se developers web browser ke APIs ko explore kar sakte hain aur unka istemal karke dynamic web applications develop kar sakte hain.
+
+Overall, console ek powerful tool hai jo developers ko code likhte waqt real-time feedback provide karta hai aur unhe debugging aur testing mein madad karta hai.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+method likhte waqt kuch mistakes or achi practices
+
+Jab aap method likh rahe hain, kuch mistakes se bachne aur behtar practices ka dhyan rakhna jaruri hai. Niche kuch common mistakes aur achi practices di gayi hain:
+
+Mistakes:
+
+1. Poor Naming Convention:
+   - Method ka naam clear aur descriptive hona chahiye.
+   - Avoid single letter names ya ambiguous names ka istemal.
+
+2. Overloading:
+   - Method overloading (ek method ka multiple definitions dena) JavaScript mein nahi hota hai.
+   - Ek hi naam ke do alag-alag functions define karne ki koshish na karein.
+
+3. Overuse of Side Effects:
+   - Methods ko likhte waqt side effects ko minimize karein.
+   - Side effects se matlab hai ki function ke execution se kisi state ya variable mein unexpected changes ho jaayein.
+
+4. Ignoring Error Handling:
+   - Error handling ko ignore na karein. Methods ko robust banane ke liye error handling ka hona jaruri hai.
+   - try-catch blocks ka istemal karein jahaan exception ki sambhavna ho.
+
+Achi Practices:
+
+1. Clear Purpose:
+   - Har method ka ek clear purpose hona chahiye.
+   - Method ka naam uske functionality ko describe karna chahiye.
+
+2. Single Responsibility Principle (SRP):
+   - Ek method ko ek specific task ya responsibility assign karein.
+   - Methods ko modular banayein taki unka reuse aur maintenance aasan ho.
+
+3. Parameter Handling:
+   - Sahi number aur type ke parameters ka istemal karein.
+   - Default parameters ka istemal karke flexible methods likhein.
+
+4. Return Statements:
+   - Method ke andar sahi tarah se return statements ka istemal karein.
+   - Har function ko ek return value dena chahiye, agar applicable ho.
+
+5. Comments aur Documentation:
+   - Code readability aur maintainability ke liye comments ka istemal karein.
+   - Complex logic ya important concepts ko explain karne ke liye documentation ka istemal karein.
+
+6. Testing:
+   - Har method ko test karein multiple scenarios ke liye.
+   - Unit tests likh kar method ke expected behavior ko verify karein.
+
+In practices ko follow karke aap apne methods ko efficient, readable, aur maintainable bana sakte hain.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+example mene alert ka eik method call kiya. lekin kaffii log window.alert likh te he aisa krna kaisa
+
+`alert()` ek global function hai JavaScript mein, isliye aap ise directly `alert()` likhkar bhi call kar sakte hain. Iska matlab hai ki `window.alert()` aur `alert()` dono kaam karenge, kyun ki JavaScript mein global functions ko direct access kar sakte hain.
+
+Kuch log `window.alert()` ka istemal karte hain taki clarity maintain ho aur pata chale ki ye ek global function hai jo window object ke andar hai. Ye coding conventions ya coding standards ke tahat kiya jaata hai, lekin technically dono hi tareeqe sahi hain.
+
+Jaise ki:
+
+```javascript
+// Dono sahi tarah se kaam karenge
+alert("Hello, world!");
+window.alert("Hello, world!");
+```
+
+Aapko jo bhi approach comfortable aur consistent lage, aap uska istemal kar sakte hain. Important hai ki aap apne code mein consistency maintain karein taaki dusre developers ko aasani se samajh aaye.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+Variable in JavaScript
+
+Variable ek programming concept hai jise real-world analogy se samjha ja sakta hai. Ek variable ek container ki tarah hota hai jisme aap data store kar sakte hain aur phir us data ko program ke doosre hisson mein use kar sakte hain.
+
+Ek real-life example ke roop mein sochiye ki aap ek dukaan chalate hain aur aapke paas ek cash counter hai jisme aap paise rakhte hain. Is cash counter ko ek variable ke roop mein samajh sakte hain. Jab bhi koi customer aata hai aur kuch khareedta hai, aap uske paise is cash counter mein rakhte hain aur phir un paison ko dusre transactions mein istemal karte hain.
+
+varieble banane ka eik or faida ye he ke koi bhi aisa data jo hamari file me baaar baaar use ho raha he to ham uske variable k andar insert krke phir use krLegene
+
+Variable banane ka tareeqa.
+- sab se pehle keyword ata he varieble ka jiska naam he "var"
+- then varieble ka naam ata he naam koi bhi ho sakta he lekin iske bhi kuch rules hotw he jo batata hoo
+
+Variable ke naam likhte waqt kuch usool ya rules hote hain jo aapko programming mein follow karne chahiye:
+
+1. Descriptive Names: Variable ke naam ko aise chune jo uski purpose ko clearly represent kare. Isse code ko padhne wale aur aap khud ko bhi samajhne mein madad milti hai.
+
+2. CamelCase: Variable ke naam mein multiple words ka use hota hai to CamelCase ka istemal karein jisme har new word ke first letter ko capital likha jata hai. For example: `totalAmount`, `customerName`, etc.
+
+3. Meaningful Names: Variable ka naam aisa hona chahiye jo uski value ya data ko samajhne mein madad kare. Avoid single letter names jaise `x`, `y`, `z` unless unka specific meaning hai.
+
+4. Avoid Keywords: Variable ke naam mein programming language ke reserved keywords ka istemal na karein jaise `var`, `if`, `else` etc.
+
+5. Consistency: Variable ke naming conventions ko consistent rakhein taaki code ki readability improve ho.
+
+6. Use English: Variable names ko English mein likhein taaki code ko padhne wale har koi unhe aasani se samajh sake.
+
+7. Avoid Numbers at Start: Variable ke naam ke shuru mein number ka istemal na karein, kyunki kuch programming languages mein ye allow nahi hota.
+
+8. Avoid Special Characters: Variable names mein special characters jaise `@`, `$`, `!` ka istemal na karein, kyunki ye confusion create kar sakte hain aur readability ko kam kar sakte hain.
+
+Yeh kuch common guidelines hain jo variable naming ke liye follow ki jaati hain. Inka istemal karke aap apne code ko zyada readable aur maintainable bana sakte hain.
+
+- then = ka sign
+- phir uske andar variable ka data/value
