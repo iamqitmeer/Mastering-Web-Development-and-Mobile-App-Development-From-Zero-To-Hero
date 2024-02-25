@@ -71,3 +71,9 @@ Is code se, agar koi user website ko visit karta hai to usse ek pop-up message m
 ye javascript ka banaya gaya eik method he jise ham use krskte he.
 Ab method ka matlab eil Example se samajhata hoo.
 Ap ke Mom ne kaha ke motor chala ke ajaooo. lekin motor chalane ke liye motor set krni padti he phir uske taar ko board ke sath jora jataa he. phir jaake start krni padti he agar ham taar ko board ke sath jor dete he to ab hamara kaam chota saa reh gaya bas hame button toggled krna he motor ko chalane ya band krne ke liye. ab hamne toggled wala seen kiya ne ye eik method ban gaya or ham us ko use krte rehte he.
+
+Rules Of method.
+- method ke sath hamesha round bracket lagta he () agar iske saath round bracket () nhi lage to ham usko method nhi keh skte 
+- 
+- 
+- 
