@@ -252,3 +252,155 @@ Yeh kuch common guidelines hain jo variable naming ke liye follow ki jaati hain.
 
 - then = ka sign
 - phir uske andar variable ka data/value
+- & Last inverted coma ';' - ye zroori bhi nhi he but best practice he ke lagao to acha he
+
+ham varieble ko update bhi krskte he. means
+var isClassContinued = true
+ab edit krne ke liye.
+- pehle varieble ka naam
+- phir equalsTo ka sign ( = )
+- Phit updateed value
+- & Last inverted coma ';' - ye zroori bhi nhi he but best practice he ke lagao to acha he
+
+
+Agar Hamne Varieble Banaya Lekin Uske Andar koi bhi valyue add nhi ki to javascript use undefined show krwata he.
+
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+alert(fullName)
+mene fullName name ka koi bhi variable nhi banaya or usko mene alert krwadiya lekin bina string ke sath. ab mjhe error mils "fullName is not defined". usme fullName ko pehle browser ne search kiya ke ayaa ke is naam se koi variable bana he lekin nhi bana hua tha is liye mere paas error agayaa.
+
+Agar me varieble bana doonga to ab us ko varieble mil jaye ga or wo value show kr dega
+
+Agar me variable neeche banata hoo or variable banane se pehle hi me fullName ko alert krdeta hoo. is topic ko kehte he hoisting Ajaaoo detail me parhte he
+
+--------------------------------------------------------------------
+
+Hoisting ek JavaScript ka concept hai jisme variables aur functions ki declaration unke scope ke shuru mein move ki jaati hai. Lekin, assignment (ya initialization) statement wahi pe rehta hai jahan aapne likha hai.
+
+Iska simple matlab hai ki JavaScript interpreter code ko padhte waqt sabhi variable aur function declarations ko us block ke shuru mein move kar deta hai, lekin unki assignment ko wahi pe rehne deta hai jahan aapne kiya hai.
+
+example 
+
+var myName = "Qitmeer" // JavaScript is varieble ko wahi top pe leke chala jata he. lekin iski value ko wahi pe rehne deta he means ke
+var myName; // top pe leke chala jae ga
+myName = "Qitmeer"; // wahi pe Rehegea
+
+Chaliye ek simple example se samjhe:
+
+```javascript
+alert(x); // Output: undefined
+var x = 5;
+alert(x); // Output: 5
+```
+
+Yahan `alert(x)` pehle hi run hota hai, lekin `x` ka value `5` nahi hai, balki `undefined` hai. Kyunki `var x = 5;` ki declaration `alert(x);` ke upar hoist ho gayi hai, lekin assignment wahi pe rehta hai jahan aapne likha hai.
+
+Is tarah se hoisting ko samajhna asaan hai. Hoisting ke through JavaScript interpreter code ko organize karta hai taaki aapko errors se bachane mein madad mile aur aapka code sahi tarah se execute ho sake.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+JavaScript case-sensitive hai, matlab ki wo capital letters aur small letters ko alag alag samajhta hai. Yani agar aap kisi variable, function, ya kisi aur identifier ka naam capital letters ya small letters mein likhte hain, to JavaScript unhe alag alag entities ke roop mein treat karega.
+
+Jaise ki:
+
+```javascript
+var myVariable = 10;
+var myvariable = 20;
+
+console.log(myVariable); // Output: 10
+console.log(myvariable); // Output: 20
+```
+
+Yahan, `myVariable` aur `myvariable` do alag alag variables hain, kyunki capitalization mein difference hai.
+
+Isi tarah se function names, object properties, aur other identifiers bhi case-sensitive hote hain. Yadi aap kisi identifier ko ek jagah capital letter ke sath aur dusri jagah small letter ke sath use karte hain, to JavaScript unhe alag alag samajhega.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+JavaScript mein variable ke naam rakhne ke kuch rules hain, jinhe aapko follow karna chahiye:
+
+1. Valid Characters: Variable names letters (A-Z, a-z), digits (0-9), underscore (_) aur dollar sign ($) ka combination ho sakta hai. Lekin, variable ka naam aise shuru nahi ho sakta jo number se start ho.
+
+2. Case-Sensitivity: JavaScript case-sensitive hai, matlab ki uppercase aur lowercase letters alag alag consider hote hain. `myVariable`, `MyVariable`, aur `myvariable` teen alag alag variables hain.
+
+3. Reserved Keywords: JavaScript mein kuch reserved keywords hote hain jaise `var`, `let`, `const`, `function` etc. In keywords ka istemal variable names ke roop mein nahi kiya ja sakta.
+
+4. Meaningful Names: Variable names ko descriptive aur meaningful rakhein taaki dusre developers aasani se samajh sakein ki variable ka use kya hai. For example, `count` ka istemal count karne ke liye karein.
+
+5. CamelCase Convention: Variable names mein CamelCase convention ka istemal kiya jata hai jisme har new word ke first letter ko capital likha jata hai, jaise `myVariableName`.
+
+6. Avoid Numbers at Start: Variable name ke shuru mein number ka istemal na karein. Number se start hone wale names invalid hote hain.
+
+7. Avoid Special Characters: Variable names mein special characters jaise `!`, `@`, `#`, `%`, etc. ka istemal na karein. Underscore (_) aur dollar sign ($) ka use kiya ja sakta hai lekin zyadatar developers prefer karte hain ke sirf underscore ka hi istemal kiya jaye.
+
+8. Use English: JavaScript mein variable names ko English mein likha jata hai.
+
+Yeh kuch common rules hain variable names ke liye jo JavaScript mein follow kiye jaate hain. In rules ka palan karke aap apne code ko zyada readable aur maintainable bana sakte hain.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+CamelCase aur SnakeCase do alag-alag naming conventions hain jo programming languages mein variable names, function names, aur identifiers ke liye istemal kiye jaate hain. In dono conventions ka istemal code ko organized aur readable banane mein madad karta hai.
+
+1. **CamelCase**:
+   - CamelCase naming convention mein har new word ke pehle letter ko capital likha jaata hai, starting ke word ke first letter small hota hai.
+   - Example: `myVariableName`, `calculateInterestRate`, `getUserDetails`.
+   - JavaScript, Java, C#, Swift jaise languages mein CamelCase convention commonly istemal hota hai.
+   - CamelCase ka istemal karne se code ki readability improve hoti hai aur identifiers ko clearly distinguish karne mein madad milti hai.
+
+2. **SnakeCase**:
+   - SnakeCase naming convention mein words ko underscore (_) se separate kiya jata hai aur sabhi letters small hoti hain.
+   - Example: `my_variable_name`, `calculate_interest_rate`, `get_user_details`.
+   - Python, Ruby jaise languages mein SnakeCase convention prefer kiya jata hai.
+   - SnakeCase ka istemal bhi readability ko improve karta hai, especially agar variable name mein multiple words hain to unko clearly separate karne mein madad milti hai.
+
+Importance:
+- Sahi naming convention ka istemal code ko padhne wale aur maintain karne wale developers ke liye bahut mahatvapurna hai. Ye unhe code ko samajhne mein madad karta hai.
+- CamelCase aur SnakeCase jaise conventions ka istemal karke aap apne code ko consistent aur organized rakh sakte hain, jisse dusre developers ko code samajhne mein asani hoti hai.
+- Companies aur projects ke andar common naming conventions follow kiye jaate hain taaki codebase ek jaisa dikhe aur maintain karne mein asani ho.
+
+Samanya roop se, CamelCase JavaScript jaise languages mein zyada popular hai, lekin kuch specific communities ya languages jaise Python mein SnakeCase zyada prefer kiya jata hai. Isme koi 'right' ya 'wrong' convention nahi hoti, balki consistency aur readability hi sabse mahatvapurna hoti hai.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
