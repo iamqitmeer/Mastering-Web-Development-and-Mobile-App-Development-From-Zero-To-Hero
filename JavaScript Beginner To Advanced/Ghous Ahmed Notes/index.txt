@@ -351,13 +351,13 @@ Yeh kuch common rules hain variable names ke liye jo JavaScript mein follow kiye
 
 CamelCase aur SnakeCase do alag-alag naming conventions hain jo programming languages mein variable names, function names, aur identifiers ke liye istemal kiye jaate hain. In dono conventions ka istemal code ko organized aur readable banane mein madad karta hai.
 
-1. **CamelCase**:
+1. CamelCase:
    - CamelCase naming convention mein har new word ke pehle letter ko capital likha jaata hai, starting ke word ke first letter small hota hai.
    - Example: `myVariableName`, `calculateInterestRate`, `getUserDetails`.
    - JavaScript, Java, C#, Swift jaise languages mein CamelCase convention commonly istemal hota hai.
    - CamelCase ka istemal karne se code ki readability improve hoti hai aur identifiers ko clearly distinguish karne mein madad milti hai.
 
-2. **SnakeCase**:
+2. SnakeCase:
    - SnakeCase naming convention mein words ko underscore (_) se separate kiya jata hai aur sabhi letters small hoti hain.
    - Example: `my_variable_name`, `calculate_interest_rate`, `get_user_details`.
    - Python, Ruby jaise languages mein SnakeCase convention prefer kiya jata hai.
@@ -370,25 +370,63 @@ Importance:
 
 Samanya roop se, CamelCase JavaScript jaise languages mein zyada popular hai, lekin kuch specific communities ya languages jaise Python mein SnakeCase zyada prefer kiya jata hai. Isme koi 'right' ya 'wrong' convention nahi hoti, balki consistency aur readability hi sabse mahatvapurna hoti hai.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
+
+Variable For Numbers
+
+is me saari cheeze wohi he bus ye batana chah raha he ke ham variable me number bhi store krwaskte he.
+example
+var num = 100;
+ab is ki value ke sath string yaani "" inverted comas nhi lagenge kyu ke is ki datatype number he. "" inverted coma sirf string ke sath lagye he
+
+Ab is Number ki datatype ke sath ham mathamatical operators bhi kr skte he
+
+```javascript
+// Variable 'num1' ko 5 ke saath initialize kiya gaya hai
+var num1 = 5;
+
+// Variable 'num2' ko 3 ke saath initialize kiya gaya hai
+var num2 = 3;
+
+// 'num1' aur 'num2' ko add karke 'result' variable mein store kiya gaya hai
+var result = num1 + num2;
+
+// 'result' ko console par print kiya gaya hai
+console.log("Addition: " + result);
+
+// 'num1' aur 'num2' ko multiply karke 'result' variable mein store kiya gaya hai
+result = num1 * num2;
+
+// 'result' ko console par print kiya gaya hai
+console.log("Multiplication: " + result);
+
+// 'num1' se 'num2' ko divide karke 'result' variable mein store kiya gaya hai
+result = num1 / num2;
+
+// 'result' ko console par print kiya gaya hai
+console.log("Division: " + result);
+
+// 'num1' se 'num2' ko subtract karke 'result' variable mein store kiya gaya hai
+result = num1 - num2;
+
+// 'result' ko console par print kiya gaya hai
+console.log("Subtraction: " + result);
+```
+
+Iss code mein, `num1` aur `num2` variables ko 5 aur 3 ke saath initialize kiya gaya hai. Fir, yeh variables ko alag-alag mathematical operations jaise addition, multiplication, division, aur subtraction mein use kiya gaya hai. Sabhi operations ke results ko `result` variable mein store kiya gaya hai aur fir console par print kiya gaya hai.
+
+Output:
+```
+Addition: 8
+Multiplication: 15
+Division: 1.6666666666666667
+Subtraction: 2
+```
+
+Yeh code JavaScript mein variables ka use karke mathematical operations ko demonstrate karta hai.
+
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
