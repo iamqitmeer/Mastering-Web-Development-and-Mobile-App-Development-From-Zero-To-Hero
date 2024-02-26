@@ -427,6 +427,51 @@ Subtraction: 2
 
 Yeh code JavaScript mein variables ka use karke mathematical operations ko demonstrate karta hai.
 
+var num1 = 10;
+var num2 = 30;
+
+// console.log(num1)
+// console.log(num2)
+console.log(num1 + num2); // is me isne concat yaani plus krdiya is liye is ka output araha he 40.
+
+// Ab Agar me subtract krta hoo.
+console.log(num2 - num1); // ab isNe minus yaani subtract krdiya to iske answer aya tha // 20
+
+// Ab Agar me multiply krta hoo.
+console.log(num2 * num1); // ab isNe multiply krdiya to iske answer aya tha // 300
+
+// Ab Agar me divide krta hoo.
+console.log(num2 / num1); // ab isNe divide krdiya to iske answer aya tha // 3
+
+var num1 = "10";
+var num2 = 30;
+
+// Ab Agar me eik number OR eik string ke sath mathamatical operator kroo to.Ab
+
+// console.log(num1 + num2); // ab ye yaha pe plus to kr skta h. lekin mathamatical operation me sirf number ko hi plus krta he or yaha pe number nhi he isliye isne plus nhi concat krdiya
+
+console.log(num2 - num1); // concat ka eik usool he agar sign plus ka Or Coma ka hua to sirf concat krega. agar sign is ke khilaf ho or bhale value string me hoto wo mathamatical operation perform krdeta he. agar string ke andar number hua to. agar string ke andar text hua to NaN (Not a Number)  return krdega 
+
+// What is Concat?
+
+// Concatenation ek programming term hai jo do strings ya do data sets ko ek saath jodne ka process hai. Jab aap do strings ko concatenate karte hain, to aap unhe ek saath jodkar ek naya string bana lete hain. Ismein kisi bhi data type ki values ho sakti hain, jaise strings, numbers, arrays, ya objects.
+
+// JavaScript mein, aap concatenation karne ke liye "+" operator ka istemal karte hain. Agar aap do strings ko "+" ke saath use karte hain, to wo concatenate ho jaati hain.
+
+// Yahaan ek JavaScript example hai jo concatenate ko demonstrate karta hai:
+
+// ```javascript
+// var string1 = "Hello";
+// var string2 = "World";
+
+// // Concatenating strings using the + operator
+// var concatenatedString = string1 + " " + string2;
+
+// console.log(concatenatedString); // Output: Hello World
+// ```
+
+// Is example mein, `string1` mein "Hello" aur `string2` mein "World" hai. Fir, humne inhe concatenate karne ke liye "+" operator ka use kiya hai aur ek naya string banaya hai jo "Hello World" hai.
+
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
