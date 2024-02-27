@@ -474,9 +474,41 @@ console.log(num2 - num1); // concat ka eik usool he agar sign plus ka Or Coma ka
 
 --------------------------------------------------------------------
 --------------------------------------------------------------------
+
+Agar JavaScript me Line Breake Krni Hoto He /n Lage ga
+
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
+
+JavaScript mein "increment" aur "decrement" ek adad (number) ko badhane ya ghatane ka amal hain. Ye amal unary operators hote hain, yaani ek single operand (ya value) ke saath kaam karte hain. Increment aur decrement ke do prakar hote hain: "pre-increment/decrement" aur "post-increment/decrement".
+
+1. Pre-increment / Pre-decrement:
+   - Pre-increment ka syntax hai: `++variable`
+   - Pre-decrement ka syntax hai: `--variable`
+   - Ismein, pehle hi variable ki value badhaya ya ghataya jata hai aur phir us updated value ko kisi variable mein store kiya jata hai.
+   - Example:
+     ```javascript
+     let x = 5;
+     let y = ++x; // x ko pehle badhaya gaya aur phir y mein store kiya gaya
+     console.log(x); // Output: 6
+     console.log(y); // Output: 6
+     ```
+
+2. Post-increment / Post-decrement:
+   - Post-increment ka syntax hai: `variable++`
+   - Post-decrement ka syntax hai: `variable--`
+   - Ismein, variable ki value pehle kisi variable mein store ki jati hai aur phir variable ki value badhaya ya ghataya jata hai.
+   - Example:
+     ```javascript
+     let a = 10;
+     let b = a++; // a ki value ko pehle b mein store kiya gaya, phir a ko badhaya gaya
+     console.log(a); // Output: 11
+     console.log(b); // Output: 10
+     ```
+
+Yeh operators commonly loops aur variables mein value manipulation mein istemal kiye jate hain. Lekin, inka istemal zyada ho sakta hai to code ki readability aur maintainability par asar pad sakta hai, isliye inka istemal dhyan se karna chahiye.
+
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
