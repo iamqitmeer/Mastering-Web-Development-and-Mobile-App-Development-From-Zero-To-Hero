@@ -512,6 +512,59 @@ Yeh operators commonly loops aur variables mein value manipulation mein istemal 
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
+
+JavaScript mein BODMAS (Brackets, Orders, Division and Multiplication, Addition and Subtraction) ko istemal karke mathematical operations perform kiye ja sakte hain. Yeh operations ko variable ka istemal karke tafseel se samjhaate hain, yahan ek example hai:
+
+```javascript
+// Variables declare karein
+var x = 10;
+var y = 5;
+var z = 2;
+
+// Bodmas ke mutabiq mathematical operations perform karein
+var result = (x + y) * z / 2; // (10 + 5) * 2 / 2 = 15
+
+// Result ko print karein
+console.log("Result: " + result);
+```
+
+Iss example mein:
+
+- Pehle `x`, `y`, aur `z` variables ko declare kiya gaya hai jo ki numerical values ko represent karte hain.
+- Phir `result` variable mein `(x + y) * z / 2` expression ko assign kiya gaya hai. Yeh expression BODMAS ke rules ke mutabiq solve hoga: sabse pehle brackets, phir orders (exponents), phir division aur multiplication, aur phir addition aur subtraction.
+- Iss expression mein pehle brackets ke andar `x + y` ka addition hua hai, phir `z` se multiply kiya gaya hai, aur phir 2 se divide kiya gaya hai.
+- Ant mein `result` variable ko print kiya gaya hai jiska result 15 hoga.
+
+Is tarah se aap JavaScript mein BODMAS ke rules ke mutabiq mathematical operations perform kar sakte hain.
+
+Bilkul, main tafseel se samjhaata hoon:
+
+BODMAS (Brackets, Orders, Division and Multiplication, Addition and Subtraction) ek rule hai jo mathematical expressions ko solve karne ke liye istemal hota hai. Yeh rule ensure karta hai ki expressions ko sahi order mein solve kiya jaaye.
+
+1. Brackets (Parentheses): Sabse pehle brackets ke andar ke expressions ko solve karna hota hai. Agar ek expression ke andar aur bhi brackets hain toh unko andar se bahar ke brackets ke andar se solve karna hota hai.
+
+2. Orders (Exponents): Orders ke hisaab se exponents ko solve karna hota hai. Exponents hote hain jab ek number ko doosre number se power mein raise kiya jaata hai. For example, 2^3 mein 2 ko 3 power mein raise kiya gaya hai.
+
+3. Division and Multiplication: Division aur Multiplication ko left se right ki taraf solve karna hota hai. Matlab, jo operation pehle aata hai woh pehle solve kiya jata hai. Agar kisi expression mein division aur multiplication dono hain toh pehle woh solve hoga jo pehle aata hai.
+
+4. Addition and Subtraction: Addition aur Subtraction ko bhi left se right ki taraf solve karna hota hai. Agar ek expression mein addition aur subtraction dono hain toh pehle woh solve hoga jo pehle aata hai.
+
+Yeh rules ek saath apply karke mathematical expression ko solve kiya jaata hai. Yahan ek example hai:
+
+```
+Expression: (4 + 5) * 3 / 2 - 1
+
+Step 1: (Brackets) (4 + 5) = 9
+Step 2: (Orders) No exponents
+Step 3: (Division and Multiplication) 9 * 3 = 27
+Step 4: (Division and Multiplication) 27 / 2 = 13.5
+Step 5: (Addition and Subtraction) 13.5 - 1 = 12.5
+
+Final Result: 12.5
+```
+
+Is example mein, sabse pehle brackets ke andar ka expression solve kiya gaya, phir multiplication aur division solve ki gayi, aur ant mein addition aur subtraction. Is tarah se BODMAS ke rules ke mutabiq expressions ko solve kiya jata hai.
+
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
