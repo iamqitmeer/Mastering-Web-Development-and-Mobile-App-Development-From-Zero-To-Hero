@@ -569,8 +569,128 @@ Is example mein, sabse pehle brackets ke andar ka expression solve kiya gaya, ph
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 
+JavaScript mein `typeof` operator ka upyog kisi bhi data type ki prakar ko jaanne ke liye hota hai. Ye operator ek operand ke data type ko return karta hai. Yeh ek unary operator hai, yaani ismein ek hi operand hota hai. Yeh operand jo bhi ho, uska data type return karta hai.
+
+Yahan kuch examples hain jinmein `typeof` operator ka upyog kiya gaya hai:
+
+1. Primitive Data Types:
+   ```javascript
+   console.log(typeof 42);  // Output: "number"
+   console.log(typeof "Hello");  // Output: "string"
+   console.log(typeof true);  // Output: "boolean"
+   console.log(typeof undefined);  // Output: "undefined"
+   console.log(typeof null);  // Output: "object" (JavaScript ka ek prakar ka bug hai)
+   ```
+
+2. Objects:
+   ```javascript
+   console.log(typeof {});  // Output: "object"
+   console.log(typeof []);  // Output: "object"
+   console.log(typeof new Date());  // Output: "object"
+   ```
+
+3. Functions:
+   ```javascript
+   console.log(typeof function(){});  // Output: "function"
+   ```
+
+4. Non-Primitive Data Types:
+   ```javascript
+   console.log(typeof NaN);  // Output: "number" (NaN bhi ek number hai, 'Not a Number' ka matlab hai)
+   ```
+
+5. Symbols (ECMAScript 6 and above):
+   ```javascript
+   console.log(typeof Symbol("foo"));  // Output: "symbol"
+   ```
+
+`typeof` operator ka upyog hota hai variables ke data type ko jaanne mein, especially jab code dynamic ho aur aapko run-time mein variable ke type ke baare mein jaanna ho. Ye debugging mein bhi kaam aata hai.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+"Prompt" JavaScript ka ek method hai jo user se input lekar deta hai. Iska syntax kuch aisa hota hai:
+
+```javascript
+var result = prompt("Message");
+```
+
+Yahan, `"Message"` ek string hai jo user ko dikhai degi jab prompt khulega. Ye basically ek prompt hota hai jisme user ko kuch input karne ki liye kaha jata hai. User jo bhi input karega woh string mein hota hai.
+
+Agar user kuch nahi daalta to ye ek null value return karega.
+
+Jaise agar hum ise use karte hain:
+
+```javascript
+var name = prompt("Enter your name");
+alert("Hello " + name);
+```
+
+To agar user kuch input karta hai, toh output "Hello" ke sath uska naam aayega. Agar woh kuch nahi input karta to output bas "Hello" aayega.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
 
 
+jaroor. javascript mein "if" statement ek conditional statement hai, jiska istemal code ke ek block ko execute karne ke liye kiya jata hai agar koi condition sach ho. condition ek expression hai, jo true ya false ka man lauta sakta hai.
+
+agar condition true hai, to if statement ke body mein maujud code execute kiya jata hai. agar condition false hai, to if statement ke body mein maujud code skip kar diya jata hai.
+
+udaharan ke liye, niche diye gaye code mein, agar age variable ka man 18 ya usse zyada hai, to "You are an adult." wala message print kiya jayega. agar age variable ka man 18 se kam hai, to message print nahin kiya jayega.
+
+JavaScript
+var age = 17;
+
+if (age >= 18) {
+  console.log("You are an adult.");
+}
+Use code with caution.
+if statement ka istemal code ke ek block ko execute karne ke liye kiya ja sakta hai, agar koi condition sach ho. agar condition false hai, to code ka vah block skip kar diya jata hai.
+
+udaharan ke liye, niche diye gaye code mein, agar isLoggedIn variable ka man true hai, to "You are logged in." wala message print kiya jayega. agar isLoggedIn variable ka man false hai, to message print nahin kiya jayega.
+
+JavaScript
+var isLoggedIn = true;
+
+if (isLoggedIn) {
+  console.log("You are logged in.");
+}
+Use code with caution.
+if statement ka istemal code ke ek block ko execute karne ke liye bhi kiya ja sakta hai, agar koi condition sach ho. agar condition false hai, to code ka vah block skip kar diya jata hai.
+
+udaharan ke liye, niche diye gaye code mein, agar isLoggedIn variable ka man true hai, to "You are logged in." wala message print kiya jayega. agar isLoggedIn variable ka man false hai, to "You are not logged in." wala message print kiya jayega.
+
+JavaScript
+var isLoggedIn = false;
+
+if (isLoggedIn) {
+  console.log("You are logged in.");
+} else {
+  console.log("You are not logged in.");
+}
+Use code with caution.
+mujhe ummid hai ki isase madad milegi! agar aapke pass koi aur sawal hai to mujhe bataen.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
