@@ -676,6 +676,186 @@ mujhe ummid hai ki isase madad milegi! agar aapke pass koi aur sawal hai to mujh
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
+
+JavaScript mein, `==` (double equals) operator aik non-strict equality operator hai jo data type ko check nahi karta. Example:
+```javascript
+console.log(5 == '5'); // true
+console.log(5 == 'five'); // false
+```
+
+Jab ke, `===` (triple equals) operator strict equality operator hai, jo data types ke sath sath value ko bhi compare karta hai. Example:
+```javascript
+console.log(5 === '5'); // false
+console.log(5 === 5); // true
+console.log('five' === '5'); // false
+```
+
+In short, `==` and `===` ke comparison mein `===` strict hai jabke `==` non-strict equality hai.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+Zarurat padne par kisi statement ko code block mein execute karna ke liye `if` aur `else` statement ka istemal hota hai.
+
+```javascript
+// Example 1
+var number = 10;
+if (number > 5) {
+  console.log("Number is greater than 5.");
+} else {
+  console.log("Number is less than or equal to 5.");
+}
+// Output: Number is greater than 5.
+```
+
+Jab `number` ki value 10 hoti hai, `if` statement true hota hai. To uska block run hota hai, jismein `"Number is greater than 5."` print hota hai. Agar number ki value 5 ya usse kam hoti, to `else` ka block run hota.
+
+```javascript
+// Example 2
+var isRaining = false;
+if (isRaining) {
+  console.log("Take an umbrella.");
+} else {
+  console.log("It's not raining, enjoy your day.");
+}
+// Output: It's not raining, enjoy your day.
+```
+
+Jab `isRaining` ki value `false` hoti hai, to `if` ka block run nahi hota aur `else` ka block run hota hai.
+
+```javascript
+// Example 3
+var marks = 70;
+if (marks > 90) {
+  console.log("Grade A+");
+} else if (marks > 80) {
+  console.log("Grade A");
+} else if (marks > 70) {
+  console.log("Grade B");
+} else {
+  console.log("Grade C");
+}
+// Output: Grade B
+```
+
+Yaha, `else if` statement ka istemal kiya gaya hai jisse hum grades ko behtar tarah se categorize kar sakte hain. `marks` ki value 70 hoti hai, to pehle `if` statement false hota hai. Fir `else if (marks > 80)` ka statement false hota hai, kyunki `marks` ki value 70 hai, jo 80 se choti hai. Lekin, `else if (marks > 70)` ka statement true hota hai, to uska block run hota hai, jismein `"Grade B"` print hota hai. Agar `marks` ki value 70 se kam hoti, to `else` ka block run hota.
+
+To `if` aur `else` statement ka istemal program ko control karna ke liye kiya jata hai. Agar `if` ka statement true hota hai, to uska block run hota hai. Aur agar `if` ka statement false hota hai, to `else` ka block run hota hai.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+JavaScript mein, comparison operators se values ya variables ke darmiyan moqifaati muqable kaari (conditional) expressions banai ja sakti hain. Yeh operators aam tor par conditional statements, loops aur expressions mein istemal hote hain.
+
+**1. Equal to (`==`)**: Dono cheezon ke values ko muqable ke liye, `==` operator istemal kiya jaata hai. Yeh operator value ke saath type ki comparison nahi karta. Agar values equal hongi to true, warna false return hoga.
+  ```javascript
+  var a = 5;
+  var b = "5";
+  console.log(a == b); // true
+  ```
+  
+**2. Not equal to (`!=`)**: `!=` operator, do values ke beech not equal hone ke liye use hota hai. Agar values equal nahi hongi to true, warna false return hoga.
+  ```javascript
+  var a = 5;
+  var b = 10;
+  console.log(a != b); // true
+  ```
+  
+**3. Greater than (`>`)**: `>` operator, ek value ko dusre se bada hone ke liye use hota hai.
+  ```javascript
+  var a = 15;
+  var b = 10;
+  console.log(a > b); // true
+  ```
+  
+**4. Greater than or equal to (`>=`)**: `>=` operator, ek value ko dusre se bada ya barabar hone ke liye use hota hai.
+  ```javascript
+  var a = 15;
+  var b = 10;
+  console.log(a >= b); // true
+  ```
+  
+**5. Less than (`<`)**: `<` operator, ek value ko dusre se chota hone ke liye use hota hai.
+  ```javascript
+  var a = 15;
+  var b = 10;
+  console.log(a < b); // false
+  ```
+  
+**6. Less than or equal to (`<=`)**: `<=` operator, ek value ko dusre se chota ya barabar hone ke liye use hota hai.
+  ```javascript
+  var a = 15;
+  var b = 20;
+  console.log(a <= b); // true
+  ```
+
+**7. Strict Equal to (`===`)**: `===` operator, values ke saath type bhi compare karta hai aur agar dono values same type ke hain aur equal hain to true return karta hai.
+  ```javascript
+  var a = 5;
+  var b = "5";
+  console.log(a === b); // false
+  ```
+  
+**8. Strict Not Equal to (`!==`)**: `!==` operator, values ke saath type bhi compare karta hai aur agar dono values same type ke hain lekin equal nahi hain to true return karta hai.
+  ```javascript
+  var a = 5;
+  var b = "5";
+  console.log(a !== b); // true
+  ```
+
+In comparison operators, booleans `true` aur `false` hotay hain. `true` ko 1 aur `false` ko 0 ke barabar consider kiya jata hai. Agar aik operand string hai aur doosra number, ya aik operand number hai aur doosra string, to JavaScript automatically strings ko numbers mein convert karta hai aur comparison karta hai. Agar operands mein se koi bhi value NaN (Not a Number) ho, to kisi bhi operator ke liye result false hota hai.
+
+Ye thi comparison operators ki tafseel. Isay kisi bhi conditional statement, loop ya expressions ke sath istemal kiya ja sakta hai.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
