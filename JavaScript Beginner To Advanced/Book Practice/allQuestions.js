@@ -55,11 +55,10 @@ var quantity = 5;
 // `${visitorName} Visit <b> ${shopName} </b> & Buy <b> ${quantity} ${kyaKhareeda} </b>`
 // );
 
-
 // Book Chapter 4.
 
 // Legal Varibel
-// var myName = 
+// var myName =
 // var myname
 // var iAm_Qitmeer
 // var who1_$hh
@@ -67,7 +66,7 @@ var quantity = 5;
 
 // iLegal Varibel
 
-// var 1myName = 
+// var 1myName =
 // var @myname
 // var 1iAm_Qitmeer
 // var 3who1_$hh
