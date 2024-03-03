@@ -74,6 +74,7 @@
 //   alert('Zero')
 // } else {
 //   alert('Negative')
+
 // }
 
 // Ek prompt se user se do numbers input lo. Agar dono numbers equal hain toh unka product print karo, agar pehla number bara hai toh uska square print karo, aur agar doosra number bara hai toh uska square root print karo.
