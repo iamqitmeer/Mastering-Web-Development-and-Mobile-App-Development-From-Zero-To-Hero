@@ -881,6 +881,7 @@ var fruits = ["banana", "orange"];
 fruits.unshift("apple");
 // Ab fruits mein ["apple", "banana", "orange"] hoga.
 ```
+```
 
 Slice Method:
 slice() method Array se ek naya Array banata hai, jo original Array ke selected elements ko include karta hai. Yeh method do parameters leta hai: start index aur end index (jo optional hai). Yadi end index provide nahi kiya gaya hai, to slice() method start index se lekar Array ke end tak ke elements ko select karta hai.
