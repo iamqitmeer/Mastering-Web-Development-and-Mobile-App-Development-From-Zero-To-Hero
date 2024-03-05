@@ -454,7 +454,7 @@ console.log(num2 - num1); // concat ka eik usool he agar sign plus ka Or Coma ka
 
 // What is Concat?
 
-// Concatenation ek programming term hai jo do strings ya do data sets ko ek saath jodne ka process hai. Jab aap do strings ko concatenate karte hain, to aap unhe ek saath jodkar ek naya string bana lete hain. Ismein kisi bhi data type ki values ho sakti hain, jaise strings, numbers, arrays, ya objects.
+// Concatenation ek programming term hai jo do strings ya do data sets ko ek saath jodne ka process hai. Jab aap do strings ko concatenate karte hain, to aap unhe ek saath jodkar ek naya string bana lete hain. Ismein kisi bhi data type ki values ho sakti hain, jaise strings, numbers, Arrays, ya objects.
 
 // JavaScript mein, aap concatenation karne ke liye "+" operator ka istemal karte hain. Agar aap do strings ko "+" ke saath use karte hain, to wo concatenate ho jaati hain.
 
@@ -813,7 +813,104 @@ Ye thi comparison operators ki tafseel. Isay kisi bhi conditional statement, loo
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 
+JavaScript mein, ek Array ek tarah ka data structure hai jo kai values ko ek saath store karne ki anumati deta hai. Yeh values kisi bhi data type ki ho sakti hain jaise numbers, strings, objects, ya phir even other Arrays. Har value ko ek unique index assign kiya jata hai, jisse aap unhein access kar sakte hain.
 
+Yahan ek simple example hai:
+
+```javascript
+// Ek Array banate hain jo numbers ko store karta hai
+var numbers = [1, 2, 3, 4, 5];
+
+// Ek Array banate hain jo strings ko store karta hai
+var fruits = ['Apple', 'Banana', 'Orange'];
+
+// Ek Array banate hain jo mixed data types ko store karta hai
+var AixedArray = [1, 'hello', true, { name: 'John' }];
+
+// Array ki values ko access karna
+console.log(numbers[0]); // Output: 1
+console.log(fruits[1]);  // Output: Banana
+console.log(AixedArray[2]); // Output: true
+
+// Array ke length ko janana
+console.log(numbers.length); // Output: 5
+console.log(fruits.length);  // Output: 3
+console.log(AixedArray.length); // Output: 4
+```
+
+Is example mein, `numbers`, `fruits`, aur `AixedArray` Arrays hain. Har ek Array mein alag tarah ki values hain. Aap `[]` brackets ka istemal karke ek Array declare kar sakte hain, aur `length` property ka istemal karke Array ke length ko jan sakte hain. Array ke values ko index ki madad se access kiya ja sakta hai, jahan pe index 0 se start hota hai.
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+JavaScript mein Arrays bahut ahem hote hain kyunki ye data ko organize karne aur manage karne ke liye ek mukhya tareeqa hain. Array ek collection hoti hai jo multiple values ko store karne ki capacity rakhti hai. Yahan tak ki ek hi Array mein strings, numbers, objects, functions, aur even other Arrays bhi ho sakti hain.
+
+Yahan kuch mukhya Array methods hain:
+
+1. **push()**: Ye method Array ke end mein ek ya zyada elements ko add karta hai.
+Or Ye Array Ki length ko return krta he
+
+```javascript
+var fruits = ["apple", "banana"];
+fruits.push("orange");
+// Ab fruits mein ["apple", "banana", "orange"] hoga.
+```
+
+2. **pop()**: Ye method Array ke end se ek element ko hata deta hai aur use jo value hat Ti he use return karta hai.
+
+```javascript
+var fruits = ["apple", "banana", "orange"];
+var lastFruit = fruits.pop();
+// Ab lastFruit mein "orange" hoga aur fruits mein ["apple", "banana"] hoga.
+```
+
+3. **shift()**: Ye method Array ke shuruaati element ko hata deta hai aur  jo value hat Ti he use return karta hai
+
+```javascript
+var fruits = ["apple", "banana", "orange"];
+var firstFruit = fruits.shift();
+// Ab firstFruit mein "apple" hoga aur fruits mein ["banana", "orange"] hoga.
+```
+
+4. **unshift()**: Ye method Array ke shuruaat mein ek ya zyada elements ko add karta hai.
+Or Ye Array Ki length ko return krta he
+
+```javascript
+var fruits = ["banana", "orange"];
+fruits.unshift("apple");
+// Ab fruits mein ["apple", "banana", "orange"] hoga.
+```
+
+Slice Method:
+slice() method Array se ek naya Array banata hai, jo original Array ke selected elements ko include karta hai. Yeh method do parameters leta hai: start index aur end index (jo optional hai). Yadi end index provide nahi kiya gaya hai, to slice() method start index se lekar Array ke end tak ke elements ko select karta hai.
+
+Ye Apna Output Eik Naye Array me Deta he. mtlb .slice ko call krte waqt apke use eik naye array me put krna hoga.
+return me apna output return krta h
+
+var fruits = ['Apple', 'Banana', 'Orange', 'Mango', 'Grapes'];
+
+var selectedFruits = fruits.slice(1, 3);
+console.log(selectedFruits); // Output: ['Banana', 'Orange']
+Is example mein, slice(1, 3) method 'fruits' Array se 'Banana' aur 'Orange' ko select karta hai, jinhein 'selectedFruits' Array mein store kiya jata hai.
+
+Splice Method:
+splice() method Array ko modify karta hai, elements ko remove ya add karke. Yeh method teen parameters leta hai: start index (jahan se modification shuru karni hai), delete count (kitne elements remove karne hain), aur optional parameters jaise hi new elements (jo Array mein add kiya jayega).
+
+Ye Return Me deleted value return krta he.
+
+var fruits = ['Apple', 'Banana', 'Orange', 'Mango', 'Grapes'];
+
+// 'Banana' aur 'Orange' ko remove karna
+fruits.splice(1, 2);
+console.log(fruits); // Output: ['Apple', 'Mango', 'Grapes']
+
+// 'Strawberry' aur 'Pineapple' ko add karna 'Mango' ke baad
+fruits.splice(2, 0, 'Strawberry', 'Pineapple');
+console.log(fruits); // Output: ['Apple', 'Mango', 'Strawberry', 'Pineapple', 'Grapes']
+Is example mein, splice(1, 2) method 'fruits' Array se 'Banana' aur 'Orange' ko remove karta hai. Aur phir splice(2, 0, 'Strawberry', 'Pineapple') method 'Mango' ke baad 'Strawberry' aur 'Pineapple' ko add karta hai.us mein ["orange", "grape"] hoga.
+
+Ye sirf kuch basic methods hain. JavaScript mein aur bhi bahut se Array methods hain jo advanced functionality provide karte hain.
 
 --------------------------------------------------------------------
 --------------------------------------------------------------------
