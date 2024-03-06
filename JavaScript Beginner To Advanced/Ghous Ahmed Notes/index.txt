@@ -916,9 +916,62 @@ Ye sirf kuch basic methods hain. JavaScript mein aur bhi bahut se Array methods 
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
+
+JavaScript mein do pramukh data types hote hain: primitive aur non-primitive (yaadat ke types). Yahaan dono ke beech ka farq samjhaata hoon:
+
+1. **Primitive Types:**
+   - **Number:** Numeric values ko represent karta hai, jo ki integers aur floating-point numbers ho sakte hain.
+   - **String:** Character sequences ko represent karta hai, jo single ya double quotes mein hote hain.
+   - **Boolean:** Logical value ko represent karta hai, jo true ya false ho sakta hai.
+   - **Undefined:** Initialize nahi kiya gaya variable ya object property ko represent karta hai jo exist nahi karta.
+   - **Null:** Kisi bhi object value ki chetavani ki ichha ko darshata hai.
+   - **Symbol:** Ek vishesh pahchanakarta ko darshata hai jo object property ke roop mein istemal hota hai (ECMAScript 6 mein joda gaya hai).
+
+2. **Non-Primitive Types (Reference Types):**
+   - **Object:** Ek key-value pairs ki collection ko darshata hai. Objects adhik complex data structures hote hain aur dusre data types, including other objects, arrays, aur functions ko hold kar sakte hain.
+   - **Array:** Data ke kramashah viniyamit sangrah ko darshata hai.
+   - **Function:** Ek call karne yogy object ko darshata hai jo invoke kiya ja sakta hai.
+   - **Date:** Ek tarikh aur samay ko darshata hai.
+   - **RegExp:** Text patterns ko match karne ke liye ek regular expression object ko darshata hai.
+   - **Error:** Run time errors ko pakadne wala ek error object ko darshata hai.
+   - **Map, Set, WeakMap, WeakSet:** Ye ECMAScript 6 mein prastut kiye gaye vishesh data structures hain jo nishchit guno aur vyavaharon ke saath data sangrahon ko sambhalne ke liye upayog hota hai.
+
+Primitive types immutable hote hain, yani unki values ko nahi badla ja sakta. Non-primitive types mutable hote hain, yani unki values ko badla ja sakta hai. Iske alawa, JavaScript mein non-primitive types by reference pass kiye jate hain, jabki primitive types by value pass kiye jate hain.
+
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
+
+JavaScript mein, ek array ki shallow copy aur deep copy mein farq hai:
+
+1. **Shallow Copy:**
+   Shallow copy ek naya array banaata hai jo keval mool array ke references ko rakhta hai, lekin mool array ke elements ko ek naya copy nahi banata. Iska matlab hai ki agar mool array ke kisi element ka reference doosre array mein badla jaata hai, to dono arrays mein uss element ka reference ek hi hoga.
+   
+   Example of shallow copy:
+   ```javascript
+   var originalArray = [1, 2, 3];
+   var shallowCopy = originalArray.slice();
+
+   shallowCopy[0] = 4;
+   console.log(originalArray); // Output: [1, 2, 3]
+   console.log(shallowCopy);   // Output: [4, 2, 3]
+   ```
+
+2. **Deep Copy:**
+   Deep copy ek naya array banaata hai jo mool array ke har ek element ka ek naya copy banata hai. Iska matlab hai ki agar mool array ke kisi element ka reference doosre array mein badla jaata hai, to yeh change doosre array ko prabhaavit nahi karega, kyunki dono arrays ke elements alag-alag copies hain.
+   
+   Example of deep copy:
+   ```javascript
+   var originalArray = [1, 2, [3, 4]];
+   var deepCopy = JSON.parse(JSON.stringify(originalArray));
+
+   deepCopy[2][0] = 5;
+   console.log(originalArray); // Output: [1, 2, [3, 4]]
+   console.log(deepCopy);      // Output: [1, 2, [5, 4]]
+   ```
+
+Is tarah, shallow copy sirf mool array ke references ko copy karta hai jabki deep copy mool array ke har ek element ka naya copy banata hai.
+
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 --------------------------------------------------------------------
