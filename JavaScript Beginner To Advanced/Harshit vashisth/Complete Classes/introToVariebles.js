@@ -1,13 +1,23 @@
-Variable ek naam hai jise hum ek value ko store karne ke liye istemal karte hain. JavaScript mein, variables ek data ko temporary storage mein hold karte hain jise aap baad mein access aur modify kar sakte hain.
+// Varieble Ka Matlab Hota he Kisi Eik Specific Jagah Me Specific Data Ko Store Krna. Is me Data Ki Bohot Type Ho Skti He. Means Number, String etc..
 
-Variables JavaScript mein kyun istemal hote hain:
+// Variable ek naam hai jise hum ek value ko store karne ke liye istemal karte hain. JavaScript mein, variables ek data ko temporary storage mein hold karte hain jise aap baad mein access aur modify kar sakte hain.
 
-1. **Data Storage**: Variables ka mukhya uddeshya data ko store karna hai. Yeh ek temporary storage provide karte hain jahan aap values ko hold kar sakte hain.
+// Varieble Banane Ka Treeqa
 
-2. **Value Reuse**: Variables allow karte hain aapko ek value ko baar-baar istemal karne mein asaani. Jab aap ek value ko variable mein store karte hain, aap us value ko multiple places mein use kar sakte hain bina usko har baar dubara likhne ki zaroorat.
+// Sab se pehle varieble ka keyword aye ga "var". ye javascript ka eik built in keyword he jis ko use krke ham varieble ko bana skte he
 
-3. **Dynamic Values**: JavaScript mein variables ke through aap dynamic values store kar sakte hain, jaise ki user input ya calculations ke results.
+// 2nd Varieble Ka Naam Aye Ga Ab Varieble Ka naam rakhne ke kuch rules hote he. wo ham next chapter me parhenge. abhi ke liye me "fullname" naam rakhta hoo.
 
-4. **Program Structure**: Variables ko use karke aap apne code ko organize kar sakte hain aur uski readability aur maintainability ko improve kar sakte hain.
+// 3rd = ka sign. ye equal to ka sign batata he ke ye varieble kaa naam agar ap likho ge to iski return value me varieble ki value ayeGi.
 
-Overall, variables JavaScript mein data ko store karne aur manage karne ke liye istemal hote hain, jisse aapke code ko dynamic banaya ja sake aur aap data ko asani se access aur manipulate kar sakein.
+// 4rth Varieble ki value Agar Aisi Value Jo Human Written Ho. means ke javascript ko naa maloom ho ke ye konsi value he is ke liye ham "" ke andar value likh te he
+
+// end me semicolon; ye lagana achi practice. agar ham ye jaha bhi lagate he is ka matlab javascript me ye hote he ke ab ye varieble khatam ho chuka he
+
+// let's See Eik VArieble Banate he fullName ke Naam Se
+
+var fullName = "Qitmeer Raza"; // ye eik varieble ban chuka he
+// Ab Agar Call Krna He Variable ko to Jaha Pe Bhi Call Krna He Waha Bigheir kisi quotes ke varieble ka naam de denge.example
+console.log(fullName);
+
+// Ab Ham ne Varieble BanaNa to Seekh Liya He. Agar Hame Us Varieble ki Value change krni he to. us Varieble ka naaam likhenge phir = laga ke value de denge. yaha pe var ka keyword nhi likhna kyu ke ham bane banaye varieble ki value ko change kr rahe he.
