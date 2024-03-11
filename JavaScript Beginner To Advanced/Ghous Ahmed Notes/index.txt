@@ -749,56 +749,56 @@ To `if` aur `else` statement ka istemal program ko control karna ke liye kiya ja
 
 JavaScript mein, comparison operators se values ya variables ke darmiyan moqifaati muqable kaari (conditional) expressions banai ja sakti hain. Yeh operators aam tor par conditional statements, loops aur expressions mein istemal hote hain.
 
-**1. Equal to (`==`)**: Dono cheezon ke values ko muqable ke liye, `==` operator istemal kiya jaata hai. Yeh operator value ke saath type ki comparison nahi karta. Agar values equal hongi to true, warna false return hoga.
+1. Equal to (`==`): Dono cheezon ke values ko muqable ke liye, `==` operator istemal kiya jaata hai. Yeh operator value ke saath type ki comparison nahi karta. Agar values equal hongi to true, warna false return hoga.
   ```javascript
   var a = 5;
   var b = "5";
   console.log(a == b); // true
   ```
   
-**2. Not equal to (`!=`)**: `!=` operator, do values ke beech not equal hone ke liye use hota hai. Agar values equal nahi hongi to true, warna false return hoga.
+2. Not equal to (`!=`): `!=` operator, do values ke beech not equal hone ke liye use hota hai. Agar values equal nahi hongi to true, warna false return hoga.
   ```javascript
   var a = 5;
   var b = 10;
   console.log(a != b); // true
   ```
   
-**3. Greater than (`>`)**: `>` operator, ek value ko dusre se bada hone ke liye use hota hai.
+3. Greater than (`>`): `>` operator, ek value ko dusre se bada hone ke liye use hota hai.
   ```javascript
   var a = 15;
   var b = 10;
   console.log(a > b); // true
   ```
   
-**4. Greater than or equal to (`>=`)**: `>=` operator, ek value ko dusre se bada ya barabar hone ke liye use hota hai.
+4. Greater than or equal to (`>=`): `>=` operator, ek value ko dusre se bada ya barabar hone ke liye use hota hai.
   ```javascript
   var a = 15;
   var b = 10;
   console.log(a >= b); // true
   ```
   
-**5. Less than (`<`)**: `<` operator, ek value ko dusre se chota hone ke liye use hota hai.
+5. Less than (`<`): `<` operator, ek value ko dusre se chota hone ke liye use hota hai.
   ```javascript
   var a = 15;
   var b = 10;
   console.log(a < b); // false
   ```
   
-**6. Less than or equal to (`<=`)**: `<=` operator, ek value ko dusre se chota ya barabar hone ke liye use hota hai.
+6. Less than or equal to (`<=`): `<=` operator, ek value ko dusre se chota ya barabar hone ke liye use hota hai.
   ```javascript
   var a = 15;
   var b = 20;
   console.log(a <= b); // true
   ```
 
-**7. Strict Equal to (`===`)**: `===` operator, values ke saath type bhi compare karta hai aur agar dono values same type ke hain aur equal hain to true return karta hai.
+7. Strict Equal to (`===`): `===` operator, values ke saath type bhi compare karta hai aur agar dono values same type ke hain aur equal hain to true return karta hai.
   ```javascript
   var a = 5;
   var b = "5";
   console.log(a === b); // false
   ```
   
-**8. Strict Not Equal to (`!==`)**: `!==` operator, values ke saath type bhi compare karta hai aur agar dono values same type ke hain lekin equal nahi hain to true return karta hai.
+8. Strict Not Equal to (`!==`): `!==` operator, values ke saath type bhi compare karta hai aur agar dono values same type ke hain lekin equal nahi hain to true return karta hai.
   ```javascript
   var a = 5;
   var b = "5";
@@ -848,7 +848,7 @@ JavaScript mein Arrays bahut ahem hote hain kyunki ye data ko organize karne aur
 
 Yahan kuch mukhya Array methods hain:
 
-1. **push()**: Ye method Array ke end mein ek ya zyada elements ko add karta hai.
+1. push(): Ye method Array ke end mein ek ya zyada elements ko add karta hai.
 Or Ye Array Ki length ko return krta he
 
 ```javascript
@@ -857,7 +857,7 @@ fruits.push("orange");
 // Ab fruits mein ["apple", "banana", "orange"] hoga.
 ```
 
-2. **pop()**: Ye method Array ke end se ek element ko hata deta hai aur use jo value hat Ti he use return karta hai.
+2. pop(): Ye method Array ke end se ek element ko hata deta hai aur use jo value hat Ti he use return karta hai.
 
 ```javascript
 var fruits = ["apple", "banana", "orange"];
@@ -865,7 +865,7 @@ var lastFruit = fruits.pop();
 // Ab lastFruit mein "orange" hoga aur fruits mein ["apple", "banana"] hoga.
 ```
 
-3. **shift()**: Ye method Array ke shuruaati element ko hata deta hai aur  jo value hat Ti he use return karta hai
+3. shift(): Ye method Array ke shuruaati element ko hata deta hai aur  jo value hat Ti he use return karta hai
 
 ```javascript
 var fruits = ["apple", "banana", "orange"];
@@ -873,7 +873,7 @@ var firstFruit = fruits.shift();
 // Ab firstFruit mein "apple" hoga aur fruits mein ["banana", "orange"] hoga.
 ```
 
-4. **unshift()**: Ye method Array ke shuruaat mein ek ya zyada elements ko add karta hai.
+4. unshift(): Ye method Array ke shuruaat mein ek ya zyada elements ko add karta hai.
 Or Ye Array Ki length ko return krta he
 
 ```javascript
@@ -919,22 +919,22 @@ Ye sirf kuch basic methods hain. JavaScript mein aur bhi bahut se Array methods 
 
 JavaScript mein do pramukh data types hote hain: primitive aur non-primitive (yaadat ke types). Yahaan dono ke beech ka farq samjhaata hoon:
 
-1. **Primitive Types:**
-   - **Number:** Numeric values ko represent karta hai, jo ki integers aur floating-point numbers ho sakte hain.
-   - **String:** Character sequences ko represent karta hai, jo single ya double quotes mein hote hain.
-   - **Boolean:** Logical value ko represent karta hai, jo true ya false ho sakta hai.
-   - **Undefined:** Initialize nahi kiya gaya variable ya object property ko represent karta hai jo exist nahi karta.
-   - **Null:** Kisi bhi object value ki chetavani ki ichha ko darshata hai.
-   - **Symbol:** Ek vishesh pahchanakarta ko darshata hai jo object property ke roop mein istemal hota hai (ECMAScript 6 mein joda gaya hai).
+1. Primitive Types:
+   - Number: Numeric values ko represent karta hai, jo ki integers aur floating-point numbers ho sakte hain.
+   - String: Character sequences ko represent karta hai, jo single ya double quotes mein hote hain.
+   - Boolean: Logical value ko represent karta hai, jo true ya false ho sakta hai.
+   - Undefined: Initialize nahi kiya gaya variable ya object property ko represent karta hai jo exist nahi karta.
+   - Null: Kisi bhi object value ki chetavani ki ichha ko darshata hai.
+   - Symbol: Ek vishesh pahchanakarta ko darshata hai jo object property ke roop mein istemal hota hai (ECMAScript 6 mein joda gaya hai).
 
-2. **Non-Primitive Types (Reference Types):**
-   - **Object:** Ek key-value pairs ki collection ko darshata hai. Objects adhik complex data structures hote hain aur dusre data types, including other objects, arrays, aur functions ko hold kar sakte hain.
-   - **Array:** Data ke kramashah viniyamit sangrah ko darshata hai.
-   - **Function:** Ek call karne yogy object ko darshata hai jo invoke kiya ja sakta hai.
-   - **Date:** Ek tarikh aur samay ko darshata hai.
-   - **RegExp:** Text patterns ko match karne ke liye ek regular expression object ko darshata hai.
-   - **Error:** Run time errors ko pakadne wala ek error object ko darshata hai.
-   - **Map, Set, WeakMap, WeakSet:** Ye ECMAScript 6 mein prastut kiye gaye vishesh data structures hain jo nishchit guno aur vyavaharon ke saath data sangrahon ko sambhalne ke liye upayog hota hai.
+2. Non-Primitive Types (Reference Types):
+   - Object: Ek key-value pairs ki collection ko darshata hai. Objects adhik complex data structures hote hain aur dusre data types, including other objects, arrays, aur functions ko hold kar sakte hain.
+   - Array: Data ke kramashah viniyamit sangrah ko darshata hai.
+   - Function: Ek call karne yogy object ko darshata hai jo invoke kiya ja sakta hai.
+   - Date: Ek tarikh aur samay ko darshata hai.
+   - RegExp: Text patterns ko match karne ke liye ek regular expression object ko darshata hai.
+   - Error: Run time errors ko pakadne wala ek error object ko darshata hai.
+   - Map, Set, WeakMap, WeakSet: Ye ECMAScript 6 mein prastut kiye gaye vishesh data structures hain jo nishchit guno aur vyavaharon ke saath data sangrahon ko sambhalne ke liye upayog hota hai.
 
 Primitive types immutable hote hain, yani unki values ko nahi badla ja sakta. Non-primitive types mutable hote hain, yani unki values ko badla ja sakta hai. Iske alawa, JavaScript mein non-primitive types by reference pass kiye jate hain, jabki primitive types by value pass kiye jate hain.
 
@@ -944,7 +944,7 @@ Primitive types immutable hote hain, yani unki values ko nahi badla ja sakta. No
 
 JavaScript mein, ek array ki shallow copy aur deep copy mein farq hai:
 
-1. **Shallow Copy:**
+1. Shallow Copy:
    Shallow copy ek naya array banaata hai jo keval mool array ke references ko rakhta hai, lekin mool array ke elements ko ek naya copy nahi banata. Iska matlab hai ki agar mool array ke kisi element ka reference doosre array mein badla jaata hai, to dono arrays mein uss element ka reference ek hi hoga.
    
    Example of shallow copy:
@@ -957,7 +957,7 @@ JavaScript mein, ek array ki shallow copy aur deep copy mein farq hai:
    console.log(shallowCopy);   // Output: [4, 2, 3]
    ```
 
-2. **Deep Copy:**
+2. Deep Copy:
    Deep copy ek naya array banaata hai jo mool array ke har ek element ka ek naya copy banata hai. Iska matlab hai ki agar mool array ke kisi element ka reference doosre array mein badla jaata hai, to yeh change doosre array ko prabhaavit nahi karega, kyunki dono arrays ke elements alag-alag copies hain.
    
    Example of deep copy:
