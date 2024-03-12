@@ -52,10 +52,10 @@ console.log(nulla);
 
 // Non-primitive data types include:
 
-// Object (ऑब्जेक्ट): Key-value pairs ke collection ko represent karne ke liye. Jaise { name: "John", age: 30 }
-// Array (एरे): Ordered collection of values ko store karne ke liye, jaise [1, 2, 3, 4, 5]
-// Function (फंक्शन): Code block ko reusability ke liye define karne ke liye.
-// Date (डेट): Date aur time ko represent karne ke liye.
+// Object: Key-value pairs ke collection ko represent karne ke liye. Jaise { name: "John", age: 30 }
+// Array: Ordered collection of values ko store karne ke liye, jaise [1, 2, 3, 4, 5]
+// Function: Code block ko reusability ke liye define karne ke liye.
+// Date: Date aur time ko represent karne ke liye.
 // Any other object, jaise Map, Set, Error, etc.
 
 // ---------------------- Datatype Conversion ---------------------- \\
@@ -106,3 +106,40 @@ console.log(nulla);
 // Developers explicitly null assign karte hain variables ko clear karte hue.
 // -- var y = null;
 // -- console.log(y); // Output: null
+
+// ---------------------- String se Number ---------------------- \\
+
+let value = 3
+let negValue = -value
+// console.log(negValue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(2/3);
+// console.log(2%3);
+
+let str1 = "hello"
+let str2 = " hitesh"
+
+let str3 = str1 + str2
+// console.log(str3);
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2");
+
+// console.log( (3 + 4) * 5 % 3);
+
+// console.log(+true);
+// console.log(+"");
+
+let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 2
+
+let gameCounter = 100
+++gameCounter;
+console.log(gameCounter);
