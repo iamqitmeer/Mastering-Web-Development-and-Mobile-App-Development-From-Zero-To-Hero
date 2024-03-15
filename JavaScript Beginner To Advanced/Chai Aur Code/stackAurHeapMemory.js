@@ -162,7 +162,7 @@
 
 // In methods ka istemal karke, aap strings ko manipulate karne aur un par various operations perform karne mein saksham hote hain.
 
-// Bilkul, yahan aur 10 commonly used JavaScript string methods 
+// Bilkul, yahan aur 10 commonly used JavaScript string methods
 // 22. `trimStart()` / `trimLeft()`:
 //     - `trimStart()` method string ke shuru mein se extra spaces ko remove karta hai.
 //     - `trimLeft()` ka purana naam hai, lekin aaj kal mostly `trimStart()` ka istemal hota hai.

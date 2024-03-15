@@ -178,3 +178,80 @@
 //     ```
 
 // In methods ka istemal karke, aap numbers ko format, convert, aur check kar sakte hain, aur unka istemal karke various mathematical operations perform kar sakte hain.
+
+// Zaroor, yahan aur 10 commonly used JavaScript Number methods hain:
+
+// 26. `Number.prototype.toFixed(digits)`:
+//     - `toFixed()` method number ko fixed-point notation mein convert karta hai, aur specify kiye gaye digits ke number of decimal places tak round karta hai.
+//     ```javascript
+//     var num = 10.456;
+//     console.log(num.toFixed(2)); // Output: "10.46"
+//     ```
+
+// 27. `Number.prototype.toExponential(fractionDigits)`:
+//     - `toExponential()` method number ko exponential notation mein convert karta hai.
+//     ```javascript
+//     var num = 12345.6789;
+//     console.log(num.toExponential(2)); // Output: "1.23e+4"
+//     ```
+
+// 28. `Number.prototype.toString(radix)`:
+//     - `toString()` method number ko specified radix (base) mein string mein convert karta hai.
+//     - Default radix 10 hota hai, lekin aap 2 se lekar 36 tak koi bhi radix specify kar sakte hain.
+//     ```javascript
+//     var num = 255;
+//     console.log(num.toString(16)); // Output: "ff"
+//     ```
+
+// 29. `Number.prototype.valueOf()`:
+//     - `valueOf()` method number ka primitive value return karta hai.
+//     ```javascript
+//     var num = new Number(10);
+//     console.log(num.valueOf()); // Output: 10
+//     ```
+
+// 30. `Number.prototype.toLocaleString(locales, options)`:
+//     - `toLocaleString()` method number ko specified locale ke hisaab se localized string mein convert karta hai.
+//     ```javascript
+//     var num = 1234567.89;
+//     console.log(num.toLocaleString('en-US')); // Output: "1,234,567.89"
+//     ```
+
+// 31. `Number.prototype.isInteger()`:
+//     - `isInteger()` method number ko integer hai ya nahi check karta hai.
+//     ```javascript
+//     var num1 = 10;
+//     var num2 = 10.5;
+//     console.log(Number.isInteger(num1)); // Output: true
+//     console.log(Number.isInteger(num2)); // Output: false
+//     ```
+
+// 32. `Number.prototype.isSafeInteger()`:
+//     - `isSafeInteger()` method number ko safe integer hai ya nahi check karta hai.
+//     ```javascript
+//     console.log(Number.isSafeInteger(123456)); // Output: true
+//     console.log(Number.isSafeInteger(Math.pow(2, 53))); // Output: false
+//     ```
+
+// 33. `Number.prototype.toPrecision(precision)`:
+//     - `toPrecision()` method number ko specified precision tak format karta hai.
+//     ```javascript
+//     var num = 12345.6789;
+//     console.log(num.toPrecision(4)); // Output: "1.235e+4"
+//     ```
+
+// 34. `Number.prototype.toString()`:
+//     - `toString()` method number ko string mein convert karta hai.
+//     ```javascript
+//     var num = 123;
+//     console.log(num.toString()); // Output: "123"
+//     ```
+
+// 35. `Number.prototype.toPrecision()`:
+//     - `toPrecision()` method number ko string ke roop mein specified precision ke saath convert karta hai.
+//     ```javascript
+//     var num = 12345.6789;
+//     console.log(num.toPrecision(4)); // Output: "1.235e+4"
+//     ```
+
+// In methods ka istemal karke, aap numbers ko format, convert, aur check kar sakte hain, aur unka istemal karke various mathematical operations perform kar sakte hain.
