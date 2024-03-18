@@ -53,8 +53,8 @@
 //   console.log(i);
 // }
 
-var i = 25;
-while (i < 50) {
-  ++i;
-  console.log(i);
-}
+// var i = 25;
+// while (i < 50) {
+//   ++i;
+//   console.log(i);
+// }
