@@ -13,7 +13,7 @@
 // varieble is container jis me ham data ko store kr skte he.
 
 // varieble creation
-myName = "Qitmeer Raza"; // ye varieble he lekin aise varieble banana ghalat he. ye bilkul bhi achi practice nhi he.
+// myName = "Qitmeer Raza"; // ye varieble he lekin aise varieble banana ghalat he. ye bilkul bhi achi practice nhi he.
 
 // var vs let vs const
 
@@ -28,3 +28,33 @@ myName = "Qitmeer Raza"; // ye varieble he lekin aise varieble banana ghalat he.
 
 // hoisting
 // Hoisting mein, JavaScript engine variable aur function declarations ko code ke shuru mein le jaata hai, matlab ki unhe upar laata hai, lekin actual assignment ya initialization ko nahi.
+
+// types in js
+// primitive or Reference
+// primitive | without bracket
+// Reference | with bracket
+
+// 1. Primitive data types (jaise ki numbers, strings, booleans) direct value ko store karte hain, reference data types (jaise ki objects, arrays) values ko reference karte hain.
+// 2. Primitive values immutable hote hain, reference values mutable hote hain, yani ki primitive values ko change nahi kiya ja sakta lekin reference values ko change kiya ja sakta hai.
+// 3. Primitive values ko direct comparison mein compare kiya ja sakta hai, reference values ko sirf reference comparison kiya ja sakta hai.
+
+// if else
+// agar jaha pe bhi
+
+// Print 25 to 50
+
+// for (let i = 25; i <= 50; i++) {
+//   console.log(i);
+// }
+
+// var i = 0;
+// while (i < 10) {
+//   i++;
+//   console.log(i);
+// }
+
+var i = 25;
+while (i < 50) {
+  ++i;
+  console.log(i);
+}
