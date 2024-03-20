@@ -59,11 +59,18 @@
 //   console.log(i);
 // }
 
-function abc() {
-  for (var i = 0; i < 10; i++) {
-    console.log(i);
-  }
-  console.log("Inside --> ", i);
-}
+// function abc() {
+//   for (var i = 0; i < 10; i++) {
+//     console.log(i);
+//   }
+//   console.log("Inside --> ", i);
+// }
 
-abc();
+// abc();
+
+// var abc = 2;
+// if (abc === 12) {
+//   console.log("Equal");
+// } else {
+//   console.log("Not Equal");
+// }
