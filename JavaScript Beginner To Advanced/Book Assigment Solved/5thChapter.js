@@ -133,3 +133,29 @@ number = 15;
 // document.write(`Total Marks Out Of ${obtainedMarks} is ${abc}`);
 // document.write("<br>");
 // document.write(`Total Percentage is ${(abc * 100) / obtainedMarks}`);
+
+// -------------------------------------------------------------------------------------
+
+// var usd = 240;
+// var saudi = 130;
+
+// document.write(
+//   `You Have 600 Pkr, Means Only ${600 / usd}$ USD & ${
+//     600 / saudi
+//   } Saudi Rupees.`
+// );
+
+// -------------------------------------------------------------------------------------
+
+// var myNum = 30;
+
+// document.write(((myNum + 5) * 10) / 2);
+
+// -------------------------------------------------------------------------------------
+
+// var currentYear = 2024;
+// var birthYear = 1999;
+
+// document.write(`Your Age Is ${currentYear - birthYear}`);
+
+// -------------------------------------------------------------------------------------
